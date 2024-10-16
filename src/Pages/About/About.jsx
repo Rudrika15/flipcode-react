@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <Breadcrumb />
+      <Breadcrumb  title ="About"/>
     </>
   );
 };

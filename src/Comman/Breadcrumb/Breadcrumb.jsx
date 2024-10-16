@@ -1,6 +1,6 @@
 import React from "react";
 
-const Breadcrumb = () => {
+const Breadcrumb = (props) => {
   return (
     <>
       <nav aria-label="breadcrumb" className="breadcrumb1" >
@@ -9,7 +9,7 @@ const Breadcrumb = () => {
             <a href="#" className="">Home</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
-            Library
+            {props.title}
           </li>
         </ol>
       </nav>
