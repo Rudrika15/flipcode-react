@@ -94,7 +94,7 @@ const Footer = () => {
                 {/* <!-- Links --> */}
                 <h6 class="text-uppercase fw-bold mb-4" style={{fontSize:"28px"}}>Stay Connected</h6>
                 <p >
-                <i class="fa-brands fa-facebook " style={{paddingRight:"10%",fontSize:"40px",}}></i>
+                <i class="fa-brands fa-facebook " style={{paddingRight:"10%",fontSize:"40px"}}></i>
                 <i class="fa-brands fa-instagram" style={{paddingRight:"10%",fontSize:"40px"}}></i>
                 <i class="fa-brands fa-linkedin" style={{paddingRight:"10%",fontSize:"40px"}}></i>
                 </p>
