@@ -3,7 +3,14 @@ import Navbar from '../../Comman/Navbar/Navbar'
 
 const Home = () => {
   return (
-    <Navbar/>
+    <>
+   
+   <div className="home img">
+    <img src="img/laptop.jpg"  style={{width:"100%",height:"10%"}} alt="" />
+
+   </div>
+  
+    </>
   )
 }
 

@@ -6,9 +6,9 @@ const Navbar = () => {
     <>
       <nav class="navbar navbar-expand-lg bg-body-white shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            Navbar
-          </a>
+          <Link class="navbar-brand" to="/">
+            <img src="img/logo.png" className="logo"/>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,6 +30,26 @@ const Navbar = () => {
               <li class="nav-item">
                 <Link class="nav-link active" aria-current="page" to="/about">
                   About
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="/service">
+                  Service
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="/portfolio">
+                  Portfolio
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="/career">
+                  Career
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="/contact">
+                  Contact us
                 </Link>
               </li>
             </ul>

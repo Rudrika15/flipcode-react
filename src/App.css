@@ -1,7 +1,38 @@
-.breadcrumb1 {
-    background-color: #4C4B4B;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary: #ff6600;
+    --secondary: #4c4b4b;
+    --white: #fff;
 }
+
+body {
+    font-family: Roboto;
+}
+.logo{
+    width: 250px;
+}
+.breadcrumb1 {
+    background-color: var(--secondary);
+    height: 450px;
+    top: 100px;
+    color: var(--white)
+}
+ .btn-primary{
+    background-color: var(--primary) !important;
+    border: var(--primary) 1px solid;
+    width: 150px;
+    margin-left: 45%;
+    margin-top: 5%;
+    padding-bottom: 1%;
+    border-radius: 0px;
+ }
+ .btn-primary:hover{
+    background-color: var(--primary) !important;
+    border: var(--primary) 1px solid;
+    width: 250px;
+ }
+ .breadcrumb1 p{
+    font-size: 18px;
+    font-weight: 300;
+ }
