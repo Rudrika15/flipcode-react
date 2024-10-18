@@ -18,6 +18,7 @@ body {
     top: 100px;
     color: var(--white)
 }
+
  .btn-primary{
     background-color: var(--primary) !important;
     border: var(--primary) 1px solid;
@@ -30,9 +31,19 @@ body {
  .btn-primary:hover{
     background-color: var(--primary) !important;
     border: var(--primary) 1px solid;
-    width: 250px;
+    width: 150px;
  }
  .breadcrumb1 p{
     font-size: 18px;
     font-weight: 300;
+ }
+ .nav-link {
+    color: var(--primary) !important;
+    font-weight: 600;
+ }
+ .active{
+    color: var(--secondary) !important;
+ }
+ .active :hover{
+    color: var(--secondary) !important;
  }

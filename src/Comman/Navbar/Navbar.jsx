@@ -28,27 +28,28 @@ const Navbar = () => {
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/about">
+
+                <Link class="nav-link active " aria-current="page" to="/about">
                   About
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/service">
+                <Link class="nav-link " aria-current="page" to="/service">
                   Service
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/portfolio">
+                <Link class="nav-link " aria-current="page" to="/portfolio">
                   Portfolio
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/career">
+                <Link class="nav-link " aria-current="page" to="/career">
                   Career
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/contact">
+                <Link class="nav-link activ" aria-current="page" to="/contact">
                   Contact us
                 </Link>
               </li>

@@ -3,7 +3,7 @@ import Breadcrumb from "../../Comman/Breadcrumb/Breadcrumb";
 import data from "../../Json/Portfolio/data.json";
 
 const Portfolio = () => {
-  // const data = Portfolio; 
+  // const data = Portfolio;
   return (
     <>
       <Breadcrumb
@@ -60,20 +60,36 @@ const Portfolio = () => {
         </div>
       </nav>
       <div className="tab-content">
-        <div id="Front" className="container tab-pane active">
-        {data.map((item)=>(
-          <div className="col py-5  " >
-            <div
-              className="col-md-3 mb-md-0 p-md-5 " >
-              <img src={item.photo} className="card-img-top" alt="..." />
-            </div>
-            
-           
-         
-            
-
+        <div id="nav-home" className="container tab-pane active">
+          <div className="row">
+            {data.map((item) => (
+              <div className="col-py-5 col-md-4 p-md-5 mb-md-0">
+                <img src={item.photo} className="card-img-top" alt="..." />
+              </div>
+            ))}
           </div>
-           ) )}
+        </div>
+      </div>
+      <div className="tab-content ">
+        <div id="nav-profile" className="container tab-pane active ">
+          <div className="row">
+            {data.map((item) => (
+              <div className="col-py-5 col-md-4 p-md-5 mb-md-0 ">
+                <img src={item.photo} className="card-img-top" alt="..." />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="tab-content">
+        <div id="nav-contact" className="container tab-pane active">
+          <div className="row">
+            {data.map((item) => (
+              <div className="col-py-5 col-md-4 p-md-5 mb-md-0">
+                <img src={item.photo} className="card-img-top" alt="..." />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

@@ -1,12 +1,58 @@
 import React from 'react'
 import Breadcrumb from '../../Comman/Breadcrumb/Breadcrumb'
+import Technology from '../../Comman/technology/technology'
+import data from '../../Json/Service/service.json'
 
 const Service = () => {
+  // const service = Service;
   return (
     <>
        <Breadcrumb  title ="innovative It solutions"  
       detail="We offer a full spectrum of bespoke IT services designed to advance your business through enhanced efficiency, fortified security, and professional expertise. For exceptional service and to discuss how we can support your needs, please reach out to us at" 
       button="SERVICE"/> 
+      
+      <div className="container">
+        {data && data.length > 0 ? (
+          data.map((item, index) => {
+            // Render only even-indexed items
+            if (index % 2 === 0) {
+              return (
+                <div className="row py-5" key={item.id || index}>
+                  <div className="col-md-5 mb-md-0 p-md-4">
+                    <img src={item.photo} className="card-img-top" alt={item.title} />
+                  </div>
+                  <div className="col-md-7 mb-md-0 p-md-4">
+                    <h5 className="mt-0 pro-title">{item.title}</h5>
+                    <p>{item.detail}</p>
+                    <span dangerouslySetInnerHTML={{ __html: item.data }} />
+                  </div>
+                </div>
+              );
+            }
+            else{
+              return(
+                <div className="row py-5" key={item.id || index}>
+                  <div className="col-md-7 mb-md-0 p-md-4">
+                    <h5 className="mt-0 pro-title">{item.title}</h5>
+                    <p>{item.detail}</p>
+                    <span dangerouslySetInnerHTML={{ __html: item.data }} />
+                  </div>
+              
+                  <div className="col-md-5 mb-md-0 p-md-4">
+                    <img src={item.photo} className="card-img-top" alt={item.title} />
+                  </div>
+                </div>
+                
+              )
+            }
+            return null;
+          })
+        ) : (
+          <p className="text-center">No products available</p>
+        )}
+      </div>
+  
+      <Technology/>
     </>
   )
 }
