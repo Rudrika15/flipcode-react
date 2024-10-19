@@ -1,39 +1,32 @@
 [
     {
-        "id":1,
-        "title":"Custom Software Development",
-        "detail":"Custom Software Development is the process of designing, creating, deploying, and maintaining software tailored to meet the unique needs and requirements of a specific business or organization. Unlike off-the-shelf solutions, which are designed for mass markets, custom software is built to address the precise challenges and goals of a company, delivering a solution that fits seamlessly with its processes and objectives.",
-        "photo":"img/service1.jpg" ,
-        "data":       "<h4>Advantage</h4> <ul><li>Targeted Solutions</li></ul>"
+        "id": 1,
+        "photo": "img/service1.jpg",
+        "data": "<h2>Custom Software Development</h2><p>Custom Software Development is the process of designing, creating, deploying, and maintaining software tailored to meet the unique needs and requirements of a specific business or organization. Unlike off-the-shelf solutions, which are designed for mass markets, custom software is built to address the precise challenges and goals of a company, delivering a solution that fits seamlessly with its processes and objectives<p/><h4>Advantage</h4> <ul><li>Targeted Solutions</li><li>Greater Scalability<li>Software Integration</li><li>Hardware Costs</li><li>Increased Reliability</li></ul>"
     },
     {
-        "id":2,
-        "title":"Web Application Development",
-        "detail":"we specialize in delivering cutting-edge web development solutions that cater to businesses of all sizes. Our team of expert developers builds dynamic, responsive, and high-performing websites tailored to meet your business goals. Whether you need a simple landing page or a complex web application, we provide robust solutions that are both visually appealing and technically sound.",
-        "photo":"img/service2.jpg"        
+        "id": 2,
+        "data": "<h2>Web Application Development</h2><p>we specialize in delivering cutting-edge web development solutions that cater to businesses of all sizes. Our team of expert developers builds dynamic, responsive, and high-performing websites tailored to meet your business goals. Whether you need a simple landing page or a complex web application, we provide robust solutions that are both visually appealing and technically sound.<p/><h4>Our web Application Development Services Include :</h4><ul><li>React</li><li>Angular</li><li>Vue js</li><li>Next js</li><li>PHP</li><ol><li>Laravel</li><li>Codeigniter</li><li>Cake php</li></ol><li>CMS<ol><li>Wordpress</li><li>Shopify</li><li>Joomla</li><li>Magento</li><li>Drupal</li></ol></li></ul>",
+        "photo": "img/service2.jpg"
     },
     {
-        "id":3,
-        "title":"Mobile App Development",
-        "detail":"we excel in building powerful mobile applications tailored to businesses of all sizes. Our top-rated mobile app development services are focused on driving results, whether you need an Android, iOS, hybrid, or cross-platform solution. With expertise in the latest technologies, we create apps that not only meet your business needs but also engage your target audience. Trust flipcode solutions, a leading mobile app development company, to transform your ideas into innovative, high-performing mobile applications.",
-        "photo":"img/service3.jpg"        
+        "id": 3,
+        "data": "<h2>Mobile App Development</h2><p>we excel in building powerful mobile applications tailored to businesses of all sizes. Our top-rated mobile app development services are focused on driving results, whether you need an Android, iOS, hybrid, or cross-platform solution. With expertise in the latest technologies, we create apps that not only meet your business needs but also engage your target audience. Trust flipcode solutions, a leading mobile app development company, to transform your ideas into innovative, high-performing mobile applications.<p/><h3>Our Mobile App Development Services Include :</h3><ul><li>React Native</li><li>Flutter<li>Ionic</li><li>Android</li><ol><li>Java</li><li>Kotlin</li></ol> <li>IOS <ol><li>Swift</li><li>Objective C</li></ol></li> </ul>",
+        "photo": "img/service3.jpg"
     },
     {
-        "id":4,
-        "title":"UI/UX Designer",
-        "detail":"we understand that exceptional user experience is at the heart of every successful digital product. Our UI/UX design services are focused on creating intuitive, engaging, and visually compelling designs that resonate with your users and elevate your brand. We take a user-centric approach to design, ensuring that every interaction with your digital product is seamless and delightful.",
-        "photo":"img/service4.jpg"        
+        "id": 4,
+        "data": "<h2>UI/UX Designer</h2><p>we understand that exceptional user experience is at the heart of every successful digital product. Our UI/UX design services are focused on creating intuitive, engaging, and visually compelling designs that resonate with your users and elevate your brand. We take a user-centric approach to design, ensuring that every interaction with your digital product is seamless and delightful.</p><h3>Our UI/UX Development Services Include :</h3><ul><li>Wireframes Designing</li><li>Strategic Design Consulting</li><li>High/Low fidelity Prototype</li><li>Mobile App Design</li><li>Responsive Web Design</li><li>Information Architecture</li><li>UX Analysis</li><li>UI Design</li></ul>",
+        "photo": "img/service4.jpg"
     },
     {
-        "id":5,
-        "title":"Backend Development",
-        "detail":"At Flipcode Solutions, our backend development services are designed to provide the robust and scalable infrastructure necessary to power your applications and websites. We specialize in building secure, high-performance backend systems that ensure smooth operations, fast data processing, and seamless integration of APIs and databases. Whether you’re building an e-commerce platform, a mobile app, or a complex web application, our backend solutions are tailored to meet your business needs.",
-        "photo":"img/service5.jpg"        
+        "id": 5,
+        "data": "<h2>Backend Development</h2><p>At Flipcode Solutions, our backend development services are designed to provide the robust and scalable infrastructure necessary to power your applications and websites. We specialize in building secure, high-performance backend systems that ensure smooth operations, fast data processing, and seamless integration of APIs and databases. Whether you’re building an e-commerce platform, a mobile app, or a complex web application, our backend solutions are tailored to meet your business needs.</p><h3>Backend Development Services Include :</h3><ul><li>PHP</li><li>Laravel</li><li>Node JS</li><li>Python</li><li>Java</li><li>.net</li></ul>",
+        "photo": "img/service5.jpg"
     },
     {
-        "id":6,
-        "title":"E-commerce Solutions",
-        "detail":"Transform your business with Flicode solutions's comprehensive e-commerce solutions. We specialize in developing high-performance, scalable e-commerce platforms that enable businesses to sell their products and services online seamlessly. Whether you're a small retailer or a large enterprise, our customized e-commerce solutions are designed to meet your unique needs, driving growth and improving customer experience.",
-        "photo":"img/service6.jpg"        
+        "id": 6,
+        "data": "<h2>E-commerce Solutions</h2><p>Transform your business with Flicode solutions's comprehensive e-commerce solutions. We specialize in developing high-performance, scalable e-commerce platforms that enable businesses to sell their products and services online seamlessly. Whether you're a small retailer or a large enterprise, our customized e-commerce solutions are designed to meet your unique needs, driving growth and improving customer experience.<p/><h3>E-commerce Development Services Include :</h3><ul><li>Magento</li><li>Shopify</li><li>WooCommerce</li><li>BigCommerce</li><li>PrestaShop</li><li>Magento</li></ul>",
+        "photo": "img/service6.jpg"
     }
 ]

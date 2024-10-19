@@ -10,6 +10,11 @@ const Service = () => {
        <Breadcrumb  title ="innovative It solutions"  
       detail="We offer a full spectrum of bespoke IT services designed to advance your business through enhanced efficiency, fortified security, and professional expertise. For exceptional service and to discuss how we can support your needs, please reach out to us at" 
       button="SERVICE"/> 
+      <div className='container'>
+        <div className='py-4'>
+          <p>Welcome to Flipcode Solutions, where innovation meets expertise. Our IT services and solutions are designed to empower your business, enhance efficiency, and drive digital transformation. With a commitment to excellence, we deliver cutting-edge solutions tailored to meet the unique needs of your organization.</p>
+        </div>
+      </div>
       
       <div className="container">
         {data && data.length > 0 ? (
@@ -19,12 +24,12 @@ const Service = () => {
               return (
                 <div className="row py-5" key={item.id || index}>
                   <div className="col-md-5 mb-md-0 p-md-4">
-                    <img src={item.photo} className="card-img-top" alt={item.title} />
+                    <img src={item.photo} className="card-img-top"  />
                   </div>
                   <div className="col-md-7 mb-md-0 p-md-4">
-                    <h5 className="mt-0 pro-title">{item.title}</h5>
-                    <p>{item.detail}</p>
-                    <span dangerouslySetInnerHTML={{ __html: item.data }} />
+                    
+                  
+                    <span dangerouslySetInnerHTML={{ __html: item.data}} />
                   </div>
                 </div>
               );
@@ -33,13 +38,13 @@ const Service = () => {
               return(
                 <div className="row py-5" key={item.id || index}>
                   <div className="col-md-7 mb-md-0 p-md-4">
-                    <h5 className="mt-0 pro-title">{item.title}</h5>
-                    <p>{item.detail}</p>
+                    
+                    
                     <span dangerouslySetInnerHTML={{ __html: item.data }} />
                   </div>
               
                   <div className="col-md-5 mb-md-0 p-md-4">
-                    <img src={item.photo} className="card-img-top" alt={item.title} />
+                    <img src={item.photo} className="card-img-top" />
                   </div>
                 </div>
                 
