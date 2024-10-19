@@ -42,8 +42,8 @@ body {
     font-weight: 600;
  }
  .active{
-    color: var(--secondary) !important;
+    color: var(--primary) !important;
  }
- .active :hover{
+ .active:hover{
     color: var(--secondary) !important;
  }
