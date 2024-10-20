@@ -2,66 +2,66 @@
     {
         "id":1,
         "photo":"img/p1.jpg",
-        "page":"1"
+        "category":"web-app"
     },
     {
         "id":2,
         "photo":"img/p2.jpg",
-        "page":"2"
+        "category":"web-app"
     },
     {
         "id":3,
         "photo":"img/p3.jpg",
-        "page":"3"
+        "category":"web-app"
     },
     {
         "id":4,
         "photo":"img/p4.jpg",
-        "page":"4"
+        "category":"web-app"
     },
     {
         "id":5,
         "photo":"img/p5.jpg",
-        "page":"5"
+        "category":"web-app"
     },
     {
         "id":6,
         "photo":"img/p6.jpg",
-        "page":"6"
+        "category":"web-app"
     },
     {
         "id":7,
         "photo":"img/p7.jpg",
-        "page":"7"
+        "category":"web-app"
     },
     {
         "id":8,
         "photo":"img/p8.jpg",
-        "page":"8"
+        "category":"mobile-app"
     },
     {
         "id":9,
         "photo":"img/p9.jpg",
-        "page":"9"
+        "category":"mobile-app"
     },
     {
         "id":10,
         "photo":"img/p10.jpg",
-        "page":"10"
+        "category":"mobile-app"
     },
     {
         "id":11,
         "photo":"img/p11.jpg",
-        "page":"11"
+        "category":"mobile-app"
     },
     {
         "id":12,
         "photo":"img/p12.jpg",
-        "page":"12"
+        "category":"mobile-app"
     },
     {
         "id":13,
         "photo":"img/p13.jpg",
-        "page":"13"
+        "category":"mobile-app"
     }
 ]
