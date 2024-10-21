@@ -57,7 +57,7 @@ const Service = () => {
         )}
       </div>
   
-      <Technology/>
+      <Technology/><br /><br />
     </>
   )
 }

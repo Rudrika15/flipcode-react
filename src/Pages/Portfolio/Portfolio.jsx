@@ -78,7 +78,7 @@ const Portfolio = () => {
 
               return(
                 <div className="col-py-5 col-md-4 p-md-5 mb-md-0" key={id}>
-                <img src={item.photo} className="card-img-top" alt="..." />
+                <img src={items.photo} className="card-img-top" alt="..." />
               </div>
          
               );

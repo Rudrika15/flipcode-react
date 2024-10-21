@@ -57,3 +57,50 @@ body {
  .coninfo{
    font-weight: lighter;
  }
+ .conicon{
+   font-size: 3rem;
+   padding-left: 25%;
+   color: var(--primary);
+ }
+ .contit{
+   font-weight: bold;
+ }
+ .contitle{
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.05rem;
+      line-height: 1.25;
+      padding-left: 15%;
+      
+ }
+ .conadd{
+   width: 60%;
+   text-align: center;
+   padding-left: 1%;
+   font-weight: lighter;
+ }
+ /* career class */
+ .cartitlefirst{
+    font-weight: bolder;
+    letter-spacing: 2.25;
+ }
+ .carcard{
+   display: flex;
+   justify-content: space-around;
+ }
+ .cartitle{
+   font-size: 3rem;
+   color:  var(--primary);
+ }
+ .carsubtitle{
+   font-weight: bolder !important;
+   color: black !important;
+   letter-spacing: 0.25rem;
+ }
+ .carposition{
+   font-weight: bolder;
+    letter-spacing: 2.25;
+ }
+ .caraccordion{
+   padding-left: 80px;
+ }

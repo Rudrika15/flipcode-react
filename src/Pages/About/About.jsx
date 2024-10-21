@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../Comman/Navbar/Navbar";
 import Breadcrumb from "../../Comman/Breadcrumb/Breadcrumb";
 import Footer from"../../Comman/footer/footer";
 import Technology from "../../Comman/technology/technology";
 import about from "../../Json/About Us/about.json";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
-  
+  useEffect(() => {
+    AOS.init({
+      });
+  }, []);
   return (
     <>
       <Breadcrumb  title ="Who We Are"  
@@ -29,6 +33,7 @@ const About = () => {
         )}
       </div>
       <div className=" container"> 
+      <div data-aos="zoom-in">
         <div className="row" style={{lineHeight:"35px",fontSize:"15px"}}>
        
           <p>In the ever-evolving landscape of technology, Perfetto Solutions emerges as a trailblazer, marking a significant milestone in its journey by transitioning into a private limited company in 2023. With a rich history rooted in innovation and a commitment to excellence, FLIPCODE SOLUTIONS PVT. LTD. has consistently pushed the boundaries of what is possible in the realm of Information Technology (IT).</p>
@@ -38,6 +43,8 @@ const About = () => {
           <p>At Flipcode Solutions, the future is not just a destination; it's a shared adventure.</p>
 
         </div>
+        </div>
+
         </div>
       
       
