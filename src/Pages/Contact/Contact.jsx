@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumb from "../../Comman/Breadcrumb/Breadcrumb";
 
+
 const Contact = () => {
   return (
     <>
@@ -61,9 +62,16 @@ const Contact = () => {
                 placeholder="Message"
               />
               <label for="floatingMessage">Message</label>
-            </div>       
+            </div>  
+              <div className="row py-4 ">
+                <button type="button" class="btn conbtn">Get Started</button><br /><br />
+                <p className="coninfo">✓ 100% Guaranteed Security of Your Information</p>
+              </div>     
           </div>
         </div>
+      </div>
+      <div className="col-md-12 mb-5 col-lg-12 col-sm-6">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.941597342851!2d71.62444027476162!3d22.730412027168843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959418fd76eccc1%3A0xd48553a8e44d7d92!2sflipcode%20solutions!5e0!3m2!1sen!2sin!4v1729491877553!5m2!1sen!2sin" style={{width:"100%" ,height:"450px" ,border:"0", allowfullscreen:"" ,loading:"lazy", referrerpolicy:"no-referrer-when-downgrade"}} ></iframe>
       </div>
     </>
   );

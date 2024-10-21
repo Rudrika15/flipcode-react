@@ -47,3 +47,13 @@ body {
  .active:hover{
     color: var(--secondary) !important;
  }
+ /* contact class */
+ .conbtn{
+   background-color: var(--primary) !important;
+   color: var(--white);
+   width: 20%;
+   height: 30%;
+ }
+ .coninfo{
+   font-weight: lighter;
+ }
