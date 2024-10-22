@@ -32,6 +32,7 @@ body {
     background-color: var(--primary) !important;
     border: var(--primary) 1px solid;
     width: 150px;
+    cursor: pointer;
  }
  .breadcrumb1 p{
     font-size: 18px;
@@ -46,6 +47,7 @@ body {
  }
  .active:hover{
     color: var(--secondary) !important;
+    cursor: pointer;
  }
  /* contact class */
  .conbtn{
@@ -85,7 +87,7 @@ body {
     letter-spacing: 2.25;
  }
  .carcard{
-   display: flex;
+   /* display: flex; */
    justify-content: space-around;
  }
  .cartitle{
@@ -101,6 +103,10 @@ body {
    font-weight: bolder;
     letter-spacing: 2.25;
  }
- .caraccordion{
-   padding-left: 80px;
+ /* about page */
+ .adva{
+  background-image: url(../public/img/slider-2.avif);
+  color: var(--white);
+  
  }
+
