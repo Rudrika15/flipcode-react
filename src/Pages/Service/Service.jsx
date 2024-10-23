@@ -16,50 +16,42 @@ const Service = () => {
         </div>
       </div>
       
-      <div className="container">
+    <div className="container">
         {data && data.length > 0 ? (
           data.map((item, index) => {
-            // Render only even-indexed items
-            if (index % 2 === 0) {
-              return (
-                <div className="row py-5" key={item.id || index}>
-                  <div className="col-md-5 mb-md-0 p-md-4">
-                    <img src={item.photo} className="card-img-top"  />
-                  </div>
-                  <div className="col-md-7 mb-md-0 p-md-4">
-                    
-                  
-                    <span dangerouslySetInnerHTML={{ __html: item.data}} />
-                  </div>
-                </div>
-              );
-            }
-            else{
-              return(
-                <div className="row py-5" key={item.id || index}>
-                  <div className="col-md-7 mb-md-0 p-md-4">
-                    
-                    
-                    <span dangerouslySetInnerHTML={{ __html: item.data }} />
-                  </div>
-              
-                  <div className="col-md-5 mb-md-0 p-md-4">
-                    <img src={item.photo} className="card-img-top" />
-                  </div>
-                </div>
-                
-              )
-            }
-            return null;
+            // Render items based on even/odd index
+            return (
+              <div className="row py-5" key={item.id || index}>
+                {index % 2 === 0 ? (
+                  <>
+                    <div className="col-md-5 mb-md-0 p-md-4">
+                      <img src={item.photo} alt={`Image for ${item.data}`} className="card-img-top" />
+                    </div>
+                    <div className="col-md-7 mb-md-0 p-md-4">
+                      <span dangerouslySetInnerHTML={{ __html: item.data }} />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="col-md-7 mb-md-0 p-md-4">
+                      <span dangerouslySetInnerHTML={{ __html: item.data }} />
+                    </div>
+                    <div className="col-md-5 mb-md-0 p-md-4">
+                      <img src={item.photo} alt={`Image for ${item.data}`} className="card-img-top" />
+                    </div>
+                  </>
+                )}
+              </div>
+            );
           })
         ) : (
           <p className="text-center">No products available</p>
         )}
       </div>
-  
-      <Technology/><br /><br />
+
+      <Technology /><br /><br />
     </>
-  )
+  );
 }
 
 export default Service

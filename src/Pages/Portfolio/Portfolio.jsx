@@ -48,7 +48,7 @@ const Portfolio = () => {
               role="tab"
               aria-controls="nav-profile"
               aria-selected="false"
-              onClick={()=> filterItem('web-app') }
+              onClick={()=> filterItem("web-app")}
             >
               Web App
             </button>

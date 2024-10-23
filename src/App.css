@@ -109,4 +109,35 @@ body {
   color: var(--white);
   
  }
+ /* .advantage :hover{
+  background: var(--primary) !important;
 
+ } */
+.card-body:hover{
+  background-color: var(--primary) !important;
+  color: var(--white);
+}
+.abouttest{
+  background-image: url(../public/img/abouttest.jpg);
+  color: var(--white)!important;
+
+}
+.box1{
+  color: var(--white) !important;
+}
+/* Home page */
+.homebtn{
+  background-color: var(--primary) !important;
+  border: var(--primary) 1px solid;
+  width: 150px;
+  margin-left: 1%;
+  margin-top: 2%;
+  padding-bottom: 1%;
+  border-radius: 7px;
+}
+.Homebtn:hover{
+  background-color: var(--primary) !important;
+    border: var(--primary) 1px solid;
+    width: 150px;
+    cursor: pointer;
+}
