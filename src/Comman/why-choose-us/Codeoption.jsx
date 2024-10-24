@@ -7,7 +7,7 @@ const Codeoption = ()=> {
      
       <div className="container">
         <div className="row text-center py-4">
-          <h1 className="fw-bold">Why Choose Us?</h1>
+          <h1 className="fw-bold">Why Choose<span className='us'> Us?</span></h1>
           <p className="fw-light py-2">
             Welcome to our new IT company, FLIPCODE SOLUTIONS ! We understand
             that choosing the right IT partner is a crucial decision for your
@@ -22,10 +22,10 @@ const Codeoption = ()=> {
           <div className="row ">
             <div className="row  g-4">
               <div className="col-md-3">
-                <div className="card h-100 text-center ">
-                  <div className="card-body advantage ">
+                <div className="card h-100 text-center">
+                  <div className="card-body advantage">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-globe-americas box3"></i>
+                      <i className="bi bi-globe-americas box3 " style={{background:"rgba(247, 198, 5, 0.20)",fontSize:"40px",borderRadius:"50px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Expertise and Experience</p>
                     <p>
@@ -41,7 +41,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-android"></i>
+                      <i className="bi bi-android"style={{background:"rgba(255, 77, 28, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Cutting-edge Technology</p>
                     <p>
@@ -58,7 +58,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-cloud-fog2"></i>
+                      <i className="bi bi-cloud-fog2" style={{background:"rgba(0, 147, 38, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Customized Solutions</p>
                     <p>
@@ -75,7 +75,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-dropbox"></i>
+                      <i className="bi bi-dropbox" style={{background:"rgba(0, 108, 255, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Reliable Support</p>
                     <p>
@@ -100,7 +100,8 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-shield-fill-check"></i>
+                  
+                      <i className="bi bi-shield-fill-check" style={{background:"rgba(255, 77, 28, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Security and Privacy</p>
                     <p>
@@ -116,7 +117,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-shield-fill-check"></i>
+                      <i className="bi bi-shield-fill-check"style={{background:"rgba(255, 77, 28, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Cost-Effective Solutions</p>
                     <p>
@@ -132,7 +133,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-hourglass-split"></i>
+                      <i className="bi bi-hourglass-split"style={{background:"rgba(0, 147, 38, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Timely Delivery</p>
                     <p>
@@ -148,7 +149,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-calendar2-check"></i>
+                      <i className="bi bi-calendar2-check"style={{background:"rgba(0, 108, 255, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Client-Centric Approach</p>
                     <p>
@@ -173,7 +174,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-shuffle"></i>
+                      <i className="bi bi-shuffle"style={{background:"rgba(247, 198, 5, 0.20)",fontSize:"40px",borderRadius:"50px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">
                       Scalability and Flexibility
@@ -191,7 +192,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center">
                   <div className="card-body">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-journal-bookmark-fill"></i>
+                      <i className="bi bi-journal-bookmark-fill"style={{background:"rgba(0, 108, 255, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
                     </h5>
                     <p className="card-text py-4">Long-Term Partnership</p>
                     <p>

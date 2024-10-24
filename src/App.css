@@ -22,17 +22,18 @@ body {
  .btn-primary{
     background-color: var(--primary) !important;
     border: var(--primary) 1px solid;
-    width: 150px;
+    width: 200px;
     margin-left: 45%;
     margin-top: 5%;
     padding-bottom: 1%;
     border-radius: 0px;
  }
  .btn-primary:hover{
-    background-color: var(--primary) !important;
+    background-color: var(--secondary) !important;
     border: var(--primary) 1px solid;
-    width: 150px;
+    width: 200px;
     cursor: pointer;
+    border: none;
  }
  .breadcrumb1 p{
     font-size: 18px;
@@ -103,16 +104,30 @@ body {
    font-weight: bolder;
     letter-spacing: 2.25;
  }
+ .btncar{
+  background-color: var(--secondary);
+  border-radius: 20px;
+  color: var(--white);
+  width:40%;
+  height: 60%;
+  border: none;
+  margin-right: 5%;
+}
+.btncarapply{
+  background-color: var(--primary);
+  border-radius: 20px;
+  color: var(--white);
+  width:40%;
+  height: 60%;
+  border: none;
+  margin-right: 5%;
+}
  /* about page */
  .adva{
   background-image: url(../public/img/slider-2.avif);
   color: var(--white);
   
  }
- /* .advantage :hover{
-  background: var(--primary) !important;
-
- } */
 .card-body:hover{
   background-color: var(--primary) !important;
   color: var(--white);
@@ -141,3 +156,11 @@ body {
     width: 150px;
     cursor: pointer;
 }
+/* footer page  */
+.icon1:hover{
+  color: var(--primary) !important;
+  cursor: pointer;
+  
+}
+
+

@@ -20,8 +20,9 @@ const Home = () => {
       </div>
       <div className="container">
         {about.map((item, index) => (
+        
           <div className="row" py-4>
-            <div className="col-md-6 mb-md-0 p-md-4" key={item.id}>
+            <div className="col-md-6 mb-md-0 p-md-4 " key={item.id}>
               <h2 className="fw-light">Out Story</h2>
               <p style={{ fontSize: "15px", lineHeight: "35px" }}>
                 {item.detail}
@@ -30,6 +31,7 @@ const Home = () => {
                 Read more
               </button>
             </div>
+            
             <div className="col-md-6 mb-md-0 p-md-4">
               <img
                 src={item.photo}
@@ -38,14 +40,15 @@ const Home = () => {
               />
             </div>
           </div>
+          
         ))}
       </div>
       <Advantage />
-
+        <br />
       {/* <!---website advantage--> */}
       <Codeoption/>
       <br />
-      <br />
+      
       <div className="container-fuild bg-light  ">
         <div className="container">
           <div className="row py-4 text-center">
@@ -57,10 +60,10 @@ const Home = () => {
               With a commitment to excellence, we deliver cutting-edge solutions
               tailored to meet the unique needs of your organization.
             </p>
-            <div className="container ">
-              <div className="row m-5 ">
-                <div class="card" style={{ width: "25rem" }}>
-                  <div class="card-body ">
+            <div className="container  ">
+              <div className="row m-5  " >
+                <div class="card" style={{ width: "25rem"}}>
+                  <div class="card-body" >
                     <p>
                       <i class="bi bi-lightbulb"></i>
                     </p>
