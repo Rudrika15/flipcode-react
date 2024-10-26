@@ -7,10 +7,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Testimonal from "../../Comman/testimonal/Testimonal";
 import Technology from "../../Comman/technology/technology";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+         <title>Home</title>
+      </Helmet>
       <div className="home img">
         <img
           src="img/laptop.jpg"
@@ -18,10 +22,11 @@ const Home = () => {
           alt=""
         />
       </div>
+      <div data-aos="fade-right">
       <div className="container">
         {about.map((item, index) => (
-        
-          <div className="row" py-4>
+      
+          <div className="row" py-4>            
             <div className="col-md-6 mb-md-0 p-md-4 " key={item.id}>
               <h2 className="fw-light">Out Story</h2>
               <p style={{ fontSize: "15px", lineHeight: "35px" }}>
@@ -32,6 +37,7 @@ const Home = () => {
               </button>
             </div>
             
+            
             <div className="col-md-6 mb-md-0 p-md-4">
               <img
                 src={item.photo}
@@ -39,9 +45,13 @@ const Home = () => {
                 style={{ width: "500px", height: "440px" }}
               />
             </div>
+           
           </div>
           
+          
+          
         ))}
+      </div>
       </div>
       <Advantage />
         <br />
@@ -49,7 +59,7 @@ const Home = () => {
       <Codeoption/>
       <br />
       
-      <div className="container-fuild bg-light  ">
+      <div className="container-fuild bg-light  ">      
         <div className="container">
           <div className="row py-4 text-center">
             <h1 className="fw-bold ">Service</h1>
@@ -61,8 +71,8 @@ const Home = () => {
               tailored to meet the unique needs of your organization.
             </p>
             <div className="container  ">
-              <div className="row m-5  " >
-                <div class="card" style={{ width: "25rem"}}>
+              <div className="row m-5 col-md-12 "style={{gap:"11px"}} >
+                <div class="card" style={{ width: "30.33%"}}>
                   <div class="card-body" >
                     <p>
                       <i class="bi bi-lightbulb"></i>
@@ -77,7 +87,7 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="card" style={{ width: "25rem" }}>
+                <div class="card" style={{ width: "30.33%" }}>
                   <div class="card-body ">
                     <p>
                       <i class="bi bi-code-slash"></i>
@@ -91,8 +101,8 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="card" style={{ width: "25rem" }}>
-                  <div class="card-body ">
+                <div class="card " style={{ width: "30.33%" }}>
+                  <div class="card-body m-1  ">
                     <p>
                       <i class="bi bi-phone-flip"></i>
                     </p>
@@ -106,10 +116,11 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+              </div>
             </div>
-            <div className="container  ">
-              <div className="row m-5 ">
-                <div class="card" style={{ width: "25rem" }}>
+            <div className="container text-center  ">
+              <div className="row m-5 col-md-12" style={{gap:"11px"}}>
+                <div class="card" style={{ width: "30.33%" }}>
                   <div class="card-body ">
                     <p>
                     <i class="bi bi-tv-fill"></i>
@@ -124,7 +135,7 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="card" style={{ width: "25rem" }}>
+                <div class="card" style={{ width: "30.33%" }}>
                   <div class="card-body ">
                     <p>
                     <i class="bi bi-graph-up-arrow"></i>
@@ -140,7 +151,7 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="card" style={{ width: "25rem" }}>
+                <div class="card" style={{ width: "30.33%" }}>
                   <div class="card-body ">
                     <p>
                     <i class="bi bi-gear-wide-connected"></i>
@@ -158,7 +169,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      
       <br />
 
       {/* Testimonials */}

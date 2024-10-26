@@ -18,7 +18,6 @@ body {
     top: 100px;
     color: var(--white)
 }
-
  .btn-primary{
     background-color: var(--primary) !important;
     border: var(--primary) 1px solid;
@@ -33,7 +32,7 @@ body {
     border: var(--primary) 1px solid;
     width: 200px;
     cursor: pointer;
-    border: none;
+    border: none;  
  }
  .breadcrumb1 p{
     font-size: 18px;
@@ -88,7 +87,7 @@ body {
     letter-spacing: 2.25;
  }
  .carcard{
-   /* display: flex; */
+   
    justify-content: space-around;
  }
  .cartitle{
@@ -123,12 +122,16 @@ body {
   margin-right: 5%;
 }
  /* about page */
+ .advantage{
+  border-radius: 15px;
+  border: 5px solid rgba(0, 0, 0, 0.07);
+ }
  .adva{
   background-image: url(../public/img/slider-2.avif);
   color: var(--white);
   
  }
-.card-body:hover{
+.cardopt:hover{
   background-color: var(--primary) !important;
   color: var(--white);
 }
@@ -162,5 +165,7 @@ body {
   cursor: pointer;
   
 }
+/* testimonial class */
+
 
 

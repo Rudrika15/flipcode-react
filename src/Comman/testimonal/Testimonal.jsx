@@ -38,9 +38,9 @@ const Testimonal = () => {
                 </div>
               </div>
               <div className="carousel-item">
-                <div className="row d-flex justify-content-center">
+                <div className="row d-flex justify-content-center ">
                   <div className="col-lg-8">
-                    <p className="text-muted">
+                    <p className="text box2">
                       <i className="fas fa-quote-left pe-2"></i>
                       We engaged Flipcode Solutions for a critical mobile app
                       development project, and they delivered beyond our
@@ -56,9 +56,9 @@ const Testimonal = () => {
                 </div>
               </div>
               <div className="carousel-item">
-                <div className="row d-flex justify-content-center">
+                <div className="row d-flex justify-content-center ">
                   <div className="col-lg-8">
-                    <p className="text-muted">
+                    <p className="text box3">
                       <i className="fas fa-quote-left pe-2"></i>
                       The level of professionalism and commitment exhibited by
                       Flipcode Solutions is exceptional. Their responsive web
@@ -105,9 +105,8 @@ const Testimonal = () => {
         </div>
       </div>
       </div>
-      
     </>
   )
 }
 
-export default Testimonal
+export default Testimonal;

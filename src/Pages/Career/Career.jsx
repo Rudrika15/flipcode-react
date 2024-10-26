@@ -4,6 +4,7 @@ import Technology from "../../Comman/technology/technology";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 const Career = () => {
   useEffect(() => {
@@ -11,6 +12,9 @@ const Career = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Carrer</title>
+      </Helmet>
       <Breadcrumb
         title="Do What inspires you everyday"
         detail="Want to join the Flipcode team? If you have a passion & want to work for a rapidly growing IT company, check out the listings below or send your resume to"
@@ -96,13 +100,14 @@ const Career = () => {
           <div className="col-md-12">
             <div className="card">
               <div className="row">
-              <div className="col-md-8 p-3 pt-4 px-5">
-                <h4>React.js</h4>
-                
-              </div>
-              <div className="col-md-4 text-end pt-4 px-5 ">
+                <div className="col-md-8 p-3 pt-4 px-5">
+                  <h4>React.js</h4>
+                </div>
+                <div className="col-md-4 text-end pt-4 px-5 ">
                   <button className="btncar">View More</button>
-                  <button className="btncarapply" onClick={ToggleEvent}>Apply More</button>
+                  <button className="btncarapply" onClick={ToggleEvent}>
+                    Apply More
+                  </button>
                 </div>
               </div>
             </div>
@@ -115,28 +120,10 @@ const Career = () => {
           <div className="col-md-12">
             <div className="card">
               <div className="row">
-              <div className="col-md-8 p-3 pt-4 px-5">
-                <h4>Laravel</h4>                
-              </div>
-              <div className="col-md-4 text-end pt-4 px-5 ">
-                  <button className="btncar">View More</button>
-                  <button className="btncarapply">Apply More</button>
+                <div className="col-md-8 p-3 pt-4 px-5">
+                  <h4>Laravel</h4>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container py-3">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="card">
-              <div className="row">
-              <div className="col-md-8 p-3 pt-4 px-5">
-                <h4>Flutter</h4>                
-              </div>
-              <div className="col-md-4 text-end pt-4 px-5 ">
+                <div className="col-md-4 text-end pt-4 px-5 ">
                   <button className="btncar">View More</button>
                   <button className="btncarapply">Apply More</button>
                 </div>
@@ -151,11 +138,10 @@ const Career = () => {
           <div className="col-md-12">
             <div className="card">
               <div className="row">
-              <div className="col-md-8 p-3 pt-4 px-5">
-                <h4>Node.js Backend</h4>
-                
-              </div>
-              <div className="col-md-4 text-end pt-4 px-5 ">
+                <div className="col-md-8 p-3 pt-4 px-5">
+                  <h4>Flutter</h4>
+                </div>
+                <div className="col-md-4 text-end pt-4 px-5 ">
                   <button className="btncar">View More</button>
                   <button className="btncarapply">Apply More</button>
                 </div>
@@ -170,11 +156,28 @@ const Career = () => {
           <div className="col-md-12">
             <div className="card">
               <div className="row">
-              <div className="col-md-8 p-3 pt-4 px-5">
-                <h4>React Native</h4>
-                
+                <div className="col-md-8 p-3 pt-4 px-5">
+                  <h4>Node.js Backend</h4>
+                </div>
+                <div className="col-md-4 text-end pt-4 px-5 ">
+                  <button className="btncar">View More</button>
+                  <button className="btncarapply">Apply More</button>
+                </div>
               </div>
-              <div className="col-md-4 text-end pt-4 px-5 ">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container py-3">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="card">
+              <div className="row">
+                <div className="col-md-8 p-3 pt-4 px-5">
+                  <h4>React Native</h4>
+                </div>
+                <div className="col-md-4 text-end pt-4 px-5 ">
                   <button className="btncar">View More</button>
                   <button className="btncarapply">Apply More</button>
                 </div>

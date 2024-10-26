@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import Breadcrumb from "../../Comman/Breadcrumb/Breadcrumb";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   useEffect(() => {
@@ -10,6 +11,9 @@ const Contact = () => {
   }, []);
   return (
     <>
+      <Helmet>
+         <title>Contact Us</title>
+      </Helmet>
       <Breadcrumb
         title="Let's discuss your next project"
         detail="Are you ready to turn your idea into reality? At Flipcode Solutions,

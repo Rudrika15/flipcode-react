@@ -6,7 +6,7 @@ const Footer = () => {
     
       {/* <!-- Footer --> */}
       <footer className="text-center text-lg-start bg-body-tertiary text-muted">
-      <div className="p-3 mb-2 bg-dark text-white">     
+      <div className="p-3 mb-2 bg-dark text-white">    
         
 
         {/* <!-- Section: Links  --> */}
@@ -68,12 +68,12 @@ const Footer = () => {
               {/* <!-- Grid column --> */}
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 {/* <!-- Links --> */}
-                <h6 className="text-uppercase fw-bold mb-4" style={{fontSize:"28px"}}>Contact Us</h6>
+                <h6 className="text-uppercase fw-bold mb-4" style={{fontSize:"28px",textDecorationLine:"underline",WebkitTextDecorationLine:""}}>Contact Us</h6>
                 <p>
                   <a href="#!" className="text-reset" style={{textDecoration:"none"}}>
                     contact@flipcodesolutions.com
                   </a>
-                </p>
+                </p>   
                 <p>
                   <a href="#!" className="text-reset" style={{textDecoration:"none"}}>
                     +91 997 940 4044
@@ -96,7 +96,7 @@ const Footer = () => {
                 <p >
                 <i className="fa-brands fa-facebook icon1 " style={{paddingRight:"10%",fontSize:"40px"}}></i>
                 <i className="fa-brands fa-instagram icon1" style={{paddingRight:"10%",fontSize:"40px"}}></i>
-                <i className="fa-brands fa-linkedin icon1" style={{paddingRight:"10%",fontSize:"40px"}}></i>
+                <i className="fa-brands fa-linkedin icon1"  style={{paddingRight:"10%",fontSize:"40px"}}></i>
                 </p>
                 
               </div>

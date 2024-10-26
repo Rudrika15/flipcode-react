@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Advantage from "../../Comman/Advantage/Advantage.jsx";
 import Codeoption from "../../Comman/why-choose-us/Codeoption.jsx";
 import Testimonal from "../../Comman/testimonal/Testimonal.jsx";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   useEffect(() => {
@@ -16,11 +17,15 @@ const About = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
       <Breadcrumb
         title="Who We Are"
         detail="We are a forward-thinking IT firm committed to leveraging advanced technology and expertise to create impactful solutions and foster meaningful client relationships. For more information or to discuss how we can assist you, contact"
         button="About us"
       />
+      <div data-aos="fade-right">
       <div className="container">
         {about.map((item, index) => (
           <div className="row" py-4>
@@ -38,6 +43,7 @@ const About = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
       <div className=" container">
         <div data-aos="zoom-in">
@@ -94,7 +100,7 @@ const About = () => {
       </div>
       {/* <!---website advantage--> */}
       <Codeoption />
-      
+
       {/* Testimonials */}
       <Testimonal />
       <br />
