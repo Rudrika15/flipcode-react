@@ -9,7 +9,13 @@ import Testimonal from "../../Comman/testimonal/Testimonal";
 import Technology from "../../Comman/technology/technology";
 import { Helmet } from "react-helmet";
 
+
+
 const Home = () => {
+  
+  const handleAboutclick = () =>{
+    navigator("/About");
+  };
   return (
     <>
       <Helmet>
@@ -32,7 +38,8 @@ const Home = () => {
               <p style={{ fontSize: "15px", lineHeight: "35px" }}>
                 {item.detail}
               </p>
-              <button className="homebtn" onClick={{}}>
+              
+              <button className="homebtn" onClick={handleAboutclick}>
                 Read more
               </button>
             </div>

@@ -1,10 +1,69 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState} from "react";
 import Breadcrumb from "../../Comman/Breadcrumb/Breadcrumb";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 
+
 const Contact = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [contact, setContact] = useState();
+  const [message, setmessage] = useState();
+  const [nameError,setNameError] =useState(false);
+  const [emailError,setemailError] =useState(false);
+  const [contactError,setContactError] = useState(false);
+  const [messageError,setMessageError] = useState(false);
+  const emailregulare = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+
+  const handleName = (e) => {
+      var name = e. target.value;
+      if(name.length < 10)
+      {
+          setNameError(true);
+      }
+      else
+      {
+        setNameError(false);
+      }
+  }
+  const handleEmail = (e) =>{
+    var email = e.target.value;
+    if(!email.match(emailregulare))
+      {
+        setemailError(true);
+    }
+    else
+    {
+      setemailError(false);
+    }
+
+  }
+  const handleContact = (e) =>{
+    var contact = e.target.value;
+    if(contact.length < 10)
+      {
+        setContactError(true);
+    }
+    else
+    {
+      setContactError(false);
+    }
+
+  }
+  const handleMessage = (e) =>{
+    var message = e.target.value;
+    if(message.length < 500)
+      {
+        setMessageError(true);
+    }
+    else
+    {
+      setMessageError(false);
+    }
+
+  }
   useEffect(() => {
     AOS.init({
       });
@@ -29,50 +88,70 @@ const Contact = () => {
           Let’s create something remarkable together!
         </h3>
       </div>
-      </div>
+      </div>  
       <div className="container ">
         <div className="row">
           <div className="col-md-5">
             <img src="img/contactus.jpg" alt="" style={{ width: "90%" }} />
           </div>
           <div className="col-md-7 py-5 ">
-            <div class="form-floating mb-3">
+            <div class="form-floating mb-3" > 
+            {/* //onSubmit={handlesubmit}// */}
               <input
                 type="name"
+                name="name"
                 class="form-control"
                 id="floatingName"
                 placeholder="name@example.com"
+                value={name} required
+                onChange={handleName}
               />
+              <br />
+              {nameError ? <span style={{color:"red"}}> The Name fiid is required</span> : ""}
               <label for="floatingName">Name</label>
             </div>
 
             <div class="form-floating">
               <input
                 type="Email"
+                name="email"
                 class="form-control"
                 id="floatingEmail"
                 placeholder="Email"
+                value={email} required
+                onChange={handleEmail}
               />
+              <br />
+              {emailError ? <span style={{color:"red"}}> The Email fiid is required</span> : ""}
               <label for="floatingEmail">Email address</label>
             </div>
             <br />
             <div class="form-floating mb-3">
               <input
                 type="Contact"
+                name="contact"
                 class="form-control"
                 id="floatingContact"
                 placeholder="name@example.com"
+                value={contact} required
+                onChange={handleContact}
               />
+              {contactError ? <span style={{color:"red"}}> The contact fild is required</span> : ""}
+
               <label for="floatingContact">Contact Number</label>
             </div>
 
             <div class="form-floating">
               <input
                 type="Message"
+                name="message"
                 class="form-control"
                 id="floatingMessage"
                 placeholder="Message"
+                value={message} required 
+                onChange={handleMessage}
               />
+              {messageError ? <span style={{color:"red"}}> The message fiid is required</span> : ""}
               <label for="floatingMessage">Message</label>
             </div>
             <div className="row py-4 ">
