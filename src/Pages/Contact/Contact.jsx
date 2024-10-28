@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleName = (e) => {
       var name = e. target.value;
-      if(name.length < 10)
+      if(name.length < 0)
       {
           setNameError(true);
       }
@@ -54,7 +54,7 @@ const Contact = () => {
   }
   const handleMessage = (e) =>{
     var message = e.target.value;
-    if(message.length < 500)
+    if(message.length < 0)
       {
         setMessageError(true);
     }

@@ -6,8 +6,11 @@ const Codeoption = ()=> {
     <>
      
       <div className="container">
-        <div className="row text-center py-4">
-          <h1 className="fw-bold"> Why Choose<span className='us'> </span>Us?</h1>
+        <div className="row text-center py-4 ">
+        
+          <h1 className="fw-bold footers " > 
+             Why Choose<span className='us' style={{color:"orange"}}> Us?</span></h1>
+          
           <p className="fw-light py-2">
             Welcome to our new IT company, FLIPCODE SOLUTIONS ! We understand
             that choosing the right IT partner is a crucial decision for your

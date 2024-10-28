@@ -29,35 +29,27 @@ const Home = () => {
         />
       </div>
       <div data-aos="fade-right">
-      <div className="container">
-        {about.map((item, index) => (
-      
+        <div className="container">
+          {about.map((item, index) => (      
           <div className="row" py-4>            
             <div className="col-md-6 mb-md-0 p-md-4 " key={item.id}>
               <h2 className="fw-light">Out Story</h2>
               <p style={{ fontSize: "15px", lineHeight: "35px" }}>
                 {item.detail}
-              </p>
-              
+              </p>              
               <button className="homebtn" onClick={handleAboutclick}>
                 Read more
               </button>
-            </div>
-            
-            
+            </div>            
             <div className="col-md-6 mb-md-0 p-md-4">
               <img
                 src={item.photo}
                 className="card-img-top "
                 style={{ width: "500px", height: "440px" }}
               />
-            </div>
-           
-          </div>
-          
-          
-          
-        ))}
+            </div>          
+          </div>         
+          ))}
       </div>
       </div>
       <Advantage />
@@ -66,7 +58,7 @@ const Home = () => {
       <Codeoption/>
       <br />
       
-      <div className="container-fuild bg-light  ">      
+      <div className="container-fuild bg-light  ">  
         <div className="container">
           <div className="row py-4 text-center">
             <h1 className="fw-bold ">Service</h1>
@@ -78,6 +70,7 @@ const Home = () => {
               tailored to meet the unique needs of your organization.
             </p>
             <div className="container  ">
+              <div data-aos="flip-right">
               <div className="row m-5 col-md-12 "style={{gap:"11px"}} >
                 <div class="card" style={{ width: "30.33%"}}>
                   <div class="card-body" >
@@ -124,6 +117,7 @@ const Home = () => {
                 </div>
               </div>
               </div>
+            </div>
             </div>
             <div className="container text-center  ">
               <div className="row m-5 col-md-12" style={{gap:"11px"}}>

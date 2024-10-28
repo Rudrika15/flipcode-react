@@ -38,7 +38,7 @@ const Footer = () => {
                 {/* <!-- Links --> */}
                 <h6 className="text-uppercase fw-bold mb-4  " style={{fontSize:"28px"}}>Quick Links</h6>
                 <p >
-                  <a href="/" className="text-reset" style={{textDecoration:"none"}}>
+                  <a href="/" className="text-reset" style={{textDecoration:"none" }}>
                     Home
                   </a>
                 </p>
@@ -68,7 +68,7 @@ const Footer = () => {
               {/* <!-- Grid column --> */}
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 {/* <!-- Links --> */}
-                <h6 className="text-uppercase fw-bold mb-4" style={{fontSize:"28px",textDecorationLine:"underline",WebkitTextDecorationLine:""}}>Contact Us</h6>
+                <h6  className="text-uppercase fw-bold mb-4" style={{fontSize:"28px"}}>Contact Us</h6>
                 <p>
                   <a href="#!" className="text-reset" style={{textDecoration:"none"}}>
                     contact@flipcodesolutions.com

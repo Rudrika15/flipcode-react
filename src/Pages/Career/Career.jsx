@@ -95,6 +95,7 @@ const Career = () => {
           </div>
         </div>
       </div>
+      <div data-aos="zoom-in">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -105,17 +106,16 @@ const Career = () => {
                 </div>
                 <div className="col-md-4 text-end pt-4 px-5 ">
                   <button className="btncar">View More</button>
-                  <button className="btncarapply" onClick={ToggleEvent}>
-                    Apply More
-                  </button>
+                  <button className="btncarapply">Apply More</button>
+                </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="container py-3">
+        </div>
+        <div data-aos="zoom-in">
+        <div className="container py-3">
         <div className="row">
           <div className="col-md-12">
             <div className="card">
@@ -132,7 +132,8 @@ const Career = () => {
           </div>
         </div>
       </div>
-
+      </div>
+      <div data-aos="zoom-in">
       <div className="container py-3">
         <div className="row">
           <div className="col-md-12">
@@ -150,7 +151,8 @@ const Career = () => {
           </div>
         </div>
       </div>
-
+      </div>
+      <div data-aos="zoom-in">
       <div className="container py-3">
         <div className="row">
           <div className="col-md-12">
@@ -168,7 +170,8 @@ const Career = () => {
           </div>
         </div>
       </div>
-
+      </div>
+      <div data-aos="zoom-in">      
       <div className="container py-3">
         <div className="row">
           <div className="col-md-12">
@@ -186,6 +189,7 @@ const Career = () => {
           </div>
         </div>
       </div>
+      </div>    
     </>
   );
 };
