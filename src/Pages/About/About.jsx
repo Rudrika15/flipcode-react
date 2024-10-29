@@ -88,7 +88,7 @@ const About = () => {
       <div className="container-fuild bg-light ">
         <div className="container">
           <div className="row py-4 text-center">
-            <h1 className="fw-bold ">Vision</h1>
+            <h1 className="fw-bold vision ">Vision</h1>
             <p className="fw-light">
               Our vision is to be a catalyst for a connected and technologically
               advanced future. We aspire to be a driving force behind the

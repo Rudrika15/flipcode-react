@@ -5,7 +5,7 @@ const Testimonal = () => {
     <>
     <div className="container py-5">
       <div className="row text-center fw-bolder">
-        <h1>Testimonials</h1>
+        <h1 className='testi'>Testimonials</h1>
       </div>
     </div>
     <div className="container-fluid abouttest  py-5 ">

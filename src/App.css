@@ -21,16 +21,16 @@ body {
  .btn-primary{
     background-color: var(--primary) !important;
     border: var(--primary) 1px solid;
-    width: 200px;
-    margin-left: 45%;
-    margin-top: 5%;
+    width: 200px !important;
+    margin-left: 40%;
+    margin-top: 6% !important;
     padding-bottom: 1%;
-    border-radius: 0px;
+    border-radius: 0px ;
  }
  .btn-primary:hover{
     background-color: var(--secondary) !important;
-    border: var(--primary) 1px solid;
-    width: 200px;
+    border: var(--primary) 1px solid ;
+    width: 170px;
     cursor: pointer;
     border: none;  
  }
@@ -121,6 +121,34 @@ body {
   border: none;
   margin-right: 5%;
 }
+.careffect{
+  width: 100%;
+  list-style: none;
+  position: relative;
+  text-decoration: none; 
+}
+.careffect:after{
+  content: '';
+  position: absolute;
+  left: 46%;
+  bottom: -3px;
+  width: 100px;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.45s;
+}
+.careffect:hover:after {
+  content: '';
+  position: absolute;
+  right: 20%;
+  bottom: -3px;
+  width: 50px;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.80s;
+}
+
+
  /* about page */
  .advantage{
   border-radius: 15px;
@@ -165,9 +193,7 @@ body {
   cursor: pointer;
   
 }
-
-
-
+/* why choose us */
 .footers {
   text-align: center;
   width: 100%;
@@ -177,8 +203,6 @@ body {
   color: var(--secondary);
   text-decoration: none;
 }
-
-
 .footers:after {
   content: '';
   position: absolute;
@@ -206,3 +230,100 @@ body {
 .footers:hover {
   text-decoration: none; 
 }
+.vision{
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  display: inline;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.vision:after{
+  content: '';
+  position: absolute;
+  right: 45%;
+  left: 46.5%;
+  bottom: -3px;
+  width: 100px;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.45s;
+}
+.vision:hover:after{
+  content: '';
+  position: absolute;
+  left: 47%;
+  right: 20%;
+  bottom: -3px;
+  width: 20px;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.45s;
+}
+.vision:hover {
+  text-decoration: none; 
+}
+.testi{
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  display: inline;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.testi:after {
+  content: '';
+  position: absolute;
+  right: 47%;
+  left: 47%;
+  bottom: -3px;
+  width: 100px;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.45s;
+}
+
+.testi:hover:after {
+  content: '';
+  position: absolute;
+  left: 47%;
+  right: 20%;
+  bottom: -3px;
+  width: 20px;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.45s;
+}
+
+.testi:hover {
+  text-decoration: none; 
+}
+.footeffect{
+  width: 100%;
+  list-style: none;
+  position: relative;
+  text-decoration: none; 
+}
+.footeffect::after{
+  content: '';
+  position: absolute;
+  left: 5%;
+  bottom: -3px;
+  width: 100px;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.45s;
+}
+.footeffect:hover:after {
+  content: '';
+  position: absolute;
+  right: 20%;
+  bottom: -3px;
+  width: 50px;
+  height: 2px;
+  background: var(--primary);
+  transition: all 0.80s;
+}
+

@@ -61,7 +61,7 @@ const Home = () => {
       <div className="container-fuild bg-light  ">  
         <div className="container">
           <div className="row py-4 text-center">
-            <h1 className="fw-bold ">Service</h1>
+            <h1 className="fw-bold vision ">Service</h1>
             <p className="fw-light">
               Welcome to Flipcode Solutions, where innovation meets expertise.
               Our IT services and solutions are designed to empower your

@@ -10,6 +10,7 @@ import "./App.css";
 import Navbar from "./Comman/Navbar/Navbar";
 import Footer from "./Comman/footer/footer";
 
+
 const App = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/career" element={<Career />} />
+          <Route path="/career" element={<Career/>} />
           <Route path="/contact" element={<Contact />} />
         
         </Routes>
