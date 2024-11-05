@@ -184,7 +184,7 @@ const Contact = () => {
               </h5>
               <p class="card-text conadd py-3">
                 Flipcode Solutions Private Limited <br /> Nr.  Panama Sales, Dalmill
-                road <br /> Surendranagar,<br /> Gujarat 363001 India
+                road <br /> Surendranagr,<br /> Gujarat 363001 India
               </p>
             </div>
           </div>

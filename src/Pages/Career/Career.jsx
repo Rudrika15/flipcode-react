@@ -8,8 +8,15 @@ import { Helmet } from "react-helmet";
 
 const Career = () => {
   const [toggle, setToggle] = useState(true);
-  const [secondtoggle,setsecondToggle] = useState(true);
-  
+  const [secondtoggle, setsecondToggle] = useState(true);
+  const [threetoggle, setThreeToggle] = useState(true);
+  const [fourtoggle, setFourToggle] = useState(true);
+  const [fivetoggle, setFiveToggle] = useState(true);
+  const [setShowModal]=useState(true);
+  const handalOpen=()=>{
+    setShowModal(true);
+  }
+
 
   useEffect(() => {
     AOS.init({});
@@ -116,63 +123,80 @@ const Career = () => {
                     >
                       View More
                     </button>
-                    <button className="btncarapply">Apply More</button>
-                    </div>
-                    <div
-                      className="job-discription mt-3"
-                      style={{ display: "block" }}
-                      >
-                      <div className="row">
-                        <div className="col-md-10">
-                          {toggle && (
-                            <ul class="">
-                              <li>
-                                <p>
-                                  <strong>Experience: </strong>0-1 years
-                                </p>
-                              </li>
-                              <li>
-                                <p>
-                                  <strong>Skills:</strong> Basic understanding
-                                  of JavaScript, HTML, and CSS. Experience with
-                                  React.js is a plus but not required. Eagerness
-                                  to learn and grow in a fast-paced environment.
-                                </p>
-                              </li>
-                              <li>
-                                <p>
-                                  <strong>Qualification: </strong>Pursuing or
-                                  recently completed a degree in Computer
-                                  Science, Software Engineering, or a related
-                                  field. Strong analytical and problem-solving
-                                  skills. Excellent communication and teamwork
-                                  abilities.
-                                </p>
-                              </li>
-                              <li>
-                                <p>
-                                  <strong>Responsibility: </strong>Develop and
-                                  maintain user-facing features using React.js,
-                                  Collaborate with back-end developers and
-                                  designers to implement user interfaces, Write
-                                  reusable and efficient code, Troubleshoot and
-                                  debug issues, Stay updated with the latest
-                                  trends in front-end development.
-                                </p>
-                              </li>
-                              <li>
-                                <p><strong>Mode:</strong> Full Time</p></li>
-                            </ul>
-                          )}
-                        </div>
+                    <button className="btncarapply"
+                    onClick={() => handalOpen}>Apply More</button>
+                  </div>
+                  <div
+                    className="job-discription mt-3"
+                    style={{ display: "block" }}
+                  >
+                    <div className="row">
+                      <div className="col-md-10">
+                        {toggle && (
+                          <ul class="">
+                            <li>
+                              <p>
+                                <strong>Experience: </strong>0-1 years
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Skills:</strong> Basic understanding of
+                                JavaScript, HTML, and CSS. Experience with
+                                React.js is a plus but not required. Eagerness
+                                to learn and grow in a fast-paced environment.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Qualification: </strong>Pursuing or
+                                recently completed a degree in Computer Science,
+                                Software Engineering, or a related field. Strong
+                                analytical and problem-solving skills. Excellent
+                                communication and teamwork abilities.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Responsibility: </strong>Develop and
+                                maintain user-facing features using React.js,
+                                Collaborate with back-end developers and
+                                designers to implement user interfaces, Write
+                                reusable and efficient code, Troubleshoot and
+                                debug issues, Stay updated with the latest
+                                trends in front-end development.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Mode:</strong> Full Time
+                              </p>
+                            </li>
+                          </ul>
+                        )}
                       </div>
-                    </div>                  
+                    </div>
+                  </div>  
+                  {/* return(
+                  <div className="row">
+                    {(
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <label htmlFor="">Name</label>
+                    <input type="text" />
+                  
+                  </div> 
+                  )}
+                  </div>
+                  )           */}
+                  
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+       
+      {/* 2 button */}
       <div data-aos="zoom-in">
         <div className="container py-3">
           <div className="row">
@@ -183,64 +207,80 @@ const Career = () => {
                     <h4>Laravel</h4>
                   </div>
                   <div className="col-md-4 text-end pt-4 px-5 ">
-                    <button className="btncar">View More</button>
+                    <button
+                      className="btncar "
+                      onClick={() => setsecondToggle(!secondtoggle)}
+                    >
+                      View More
+                    </button>
                     <button className="btncarapply">Apply More</button>
-                  </div> 
+                  </div>
                   <div
-                      className="job-discription mt-3"
-                      style={{ display: "block" }}
-                      >
-                      <div className="row">
-                        <div className="col-md-10">
-                          {secondtoggle && (
-                            <ul class="">
-                              <li>
-                                <p>
-                                  <strong>Experience: </strong>0-1 years
-                                </p>
-                              </li>
-                              <li>
-                                <p>
-                                  <strong>Skills:</strong> Basic understanding
-                                  of JavaScript, HTML, and CSS. Experience with
-                                  React.js is a plus but not required. Eagerness
-                                  to learn and grow in a fast-paced environment.
-                                </p>
-                              </li>
-                              <li>
-                                <p>
-                                  <strong>Qualification: </strong>Pursuing or
-                                  recently completed a degree in Computer
-                                  Science, Software Engineering, or a related
-                                  field. Strong analytical and problem-solving
-                                  skills. Excellent communication and teamwork
-                                  abilities.
-                                </p>
-                              </li>
-                              <li>
-                                <p>
-                                  <strong>Responsibility: </strong>Develop and
-                                  maintain user-facing features using React.js,
-                                  Collaborate with back-end developers and
-                                  designers to implement user interfaces, Write
-                                  reusable and efficient code, Troubleshoot and
-                                  debug issues, Stay updated with the latest
-                                  trends in front-end development.
-                                </p>
-                              </li>
-                              <li>
-                                <p><strong>Mode:</strong> Full Time</p></li>
-                            </ul>
-                          )}
-                        </div>
+                    className="job-discription mt-3"
+                    style={{ display: "block" }}
+                  >
+                    <div className="row">
+                      <div className="col-md-10">
+                        {secondtoggle && (
+                          <ul class="">
+                            <li>
+                              <p>
+                                <strong>Experience: </strong>0-1 years
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Skills:</strong> Basic understanding of
+                                PHP, MySQL, and RESTful APIs. Experience with
+                                Laravel is a plus but not required. Willingness
+                                to learn and take on challenges in a dynamic
+                                work environment.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Qualification: </strong> Currently
+                                pursuing or recently completed a degree in
+                                Computer Science, Software Engineering, or a
+                                related field. Strong logical thinking and
+                                problem-solving skills. Good communication and
+                                collaboration abilities
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Responsibility: </strong>Assist in
+                                developing and maintaining back-end components
+                                of web applications using Laravel, Collaborate
+                                with front-end developers to integrate
+                                user-facing elements, Write clean, secure, and
+                                well-documented code, Debug and resolve
+                                technical issues, Participate in code reviews
+                                and team meetings.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Mode:</strong> Full Time
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Status:</strong> Open
+                              </p>
+                            </li>
+                          </ul>
+                        )}
                       </div>
-                    </div>               
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {/* 3 button */}
       <div data-aos="zoom-in">
         <div className="container py-3">
           <div className="row">
@@ -251,15 +291,81 @@ const Career = () => {
                     <h4>Flutter</h4>
                   </div>
                   <div className="col-md-4 text-end pt-4 px-5 ">
-                    <button className="btncar">View More</button>
+                    <button
+                      className="btncar"
+                      onClick={() => setThreeToggle(!threetoggle)}
+                    >
+                      View More
+                    </button>
                     <button className="btncarapply">Apply More</button>
-                  </div>                    
+                  </div>
+                  <div
+                    className="job-discription mt-3"
+                    style={{ display: "block" }}
+                  >
+                    <div className="row">
+                      <div className="col-md-10">
+                        {threetoggle && (
+                          <ul class="">
+                            <li>
+                              <p>
+                                <strong>Experience: </strong>0-1 years
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Skills:</strong> Basic understanding of
+                                Dart programming language and Flutter framework.
+                                Experience with mobile development (iOS/Android)
+                                is a plus but not required. Eagerness to learn
+                                and adapt in a fast-paced environment.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Qualification: </strong>Currently
+                                pursuing or recently completed a degree in
+                                Computer Science, Software Engineering, or a
+                                related field. Strong analytical and
+                                problem-solving skills. Excellent communication
+                                and teamwork abilities.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Responsibility: </strong>Assist in the
+                                development and maintenance of mobile
+                                applications using Flutter, Collaborate with
+                                designers and backend developers to create
+                                seamless user experiences, Write clean and
+                                efficient code, Troubleshoot and debug issues
+                                across different devices and platforms, Stay
+                                updated with the latest trends in mobile app
+                                development.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Mode:</strong> Full Time
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Status:</strong> Open
+                              </p>
+                            </li>
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {/* 4 button */}
       <div data-aos="zoom-in">
         <div className="container py-3">
           <div className="row">
@@ -270,15 +376,81 @@ const Career = () => {
                     <h4>Node.js Backend</h4>
                   </div>
                   <div className="col-md-4 text-end pt-4 px-5 ">
-                    <button className="btncar">View More</button>
+                    <button
+                      className="btncar"
+                      onClick={() => setFourToggle(!fourtoggle)}
+                    >
+                      View More
+                    </button>
                     <button className="btncarapply">Apply More</button>
                   </div>
-                </div>                
+                  <div
+                    className="job-discription mt-3"
+                    style={{ display: "block" }}
+                  >
+                    <div className="row">
+                      <div className="col-md-10">
+                        {fourtoggle && (
+                          <ul class="">
+                            <li>
+                              <p>
+                                <strong>Experience: </strong>0-1 years
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Skills:</strong> Basic understanding of
+                                JavaScript, Node.js, and RESTful APIs.
+                                Experience with databases such as MongoDB or
+                                MySQL is a plus but not required. Willingness to
+                                learn and grow in a fast-paced environment.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Qualification: </strong>Currently
+                                pursuing or recently completed a degree in
+                                Computer Science, Software Engineering, or a
+                                related field. Strong problem-solving and
+                                analytical skills. Good communication and
+                                collaboration abilities.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Responsibility: </strong> Assist in the
+                                development and maintenance of server-side logic
+                                using Node.js, Collaborate with front-end
+                                developers to integrate user-facing elements
+                                with server-side logic, Write clean, efficient,
+                                and reusable code, Implement security and data
+                                protection measures, Troubleshoot and debug
+                                server-side issues, Stay updated with the latest
+                                trends in backend development.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Mode:</strong> Full Time
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Staus:</strong> Open
+                              </p>
+                            </li>
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {/* 5 button */}
       <div data-aos="zoom-in">
         <div className="container py-3">
           <div className="row">
@@ -289,15 +461,83 @@ const Career = () => {
                     <h4>React Native</h4>
                   </div>
                   <div className="col-md-4 text-end pt-4 px-5 ">
-                    <button className="btncar">View More</button>
+                    <button
+                      className="btncar"
+                      onClick={() => setFiveToggle(!fivetoggle)}
+                    >
+                      View More
+                    </button>
                     <button className="btncarapply">Apply More</button>
-                  </div>                  
+                  </div>
+                  <div
+                    className="job-discription mt-3 "
+                    style={{ display: "block" }}
+                  >
+                    <div className="row">
+                      <div className="col-md-10">
+                        {fivetoggle && (
+                          <ul class="">
+                            <li>
+                              <p>
+                                <strong>Experience: </strong>0-1 years
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Skills:</strong> Basic understanding of
+                                JavaScript, React, and React Native. Familiarity
+                                with mobile development is a plus but not
+                                required. Eagerness to learn and adapt in a
+                                fast-paced environment.
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Qualification: </strong>Currently
+                                pursuing or recently completed a degree in
+                                Computer Science, Software Engineering, or a
+                                related field. Strong problem-solving and
+                                analytical skills. Good communication and
+                                teamwork abilities
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Responsibility: </strong> Assist in the
+                                development and maintenance of mobile
+                                applications using React Native, Collaborate
+                                with designers and backend developers to create
+                                seamless user experiences, Write clean,
+                                efficient, and reusable code, Debug and
+                                troubleshoot issues on different mobile
+                                platforms (iOS/Android), Stay updated with the
+                                latest trends in mobile developmen
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Mode:</strong> Full Time
+                              </p>
+                            </li>
+                            <li>
+                              <p>
+                                <strong>Status:</strong> Open
+                              </p>
+                            </li>
+                          </ul>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
     </>
   );
 };
