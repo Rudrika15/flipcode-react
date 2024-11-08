@@ -8,25 +8,28 @@ import "aos/dist/aos.css";
 import Testimonal from "../../Comman/testimonal/Testimonal";
 import Technology from "../../Comman/technology/technology";
 import { Helmet } from "react-helmet";
+import {useNavigate } from "react-router-dom";
+
 
 
 
 const Home = () => {
   
-  const handleAboutclick = () =>{
-    navigator("/About");
-  };
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `newPath`; 
+    navigate(path);
+  }
   return (
     <>
       <Helmet>
          <title>Home</title>
       </Helmet>
-      <div className="home img">
-        <img
-          src="img/laptop.jpg"
-          style={{ width: "100%", height: "10%" }}
-          alt=""
-        />
+      <div className="video container"style={{ position: "relative", width: "500%", height: "100vh", overflow: "hidden" }}>
+      <video id="video-background" autoplay="" muted="" loop=""  style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%", objectFit:"contain"}}>
+        <source src="img/1.mp4" type="video/mp4"/>
+       
+    </video>
       </div>
       <div data-aos="fade-right">
         <div className="container">
@@ -37,7 +40,7 @@ const Home = () => {
               <p style={{ fontSize: "15px", lineHeight: "35px" }}>
                 {item.detail}
               </p>              
-              <button className="homebtn" onClick={handleAboutclick}>
+              <button className="homebtn" onClick={routeChange}>
                 Read more
               </button>
             </div>            

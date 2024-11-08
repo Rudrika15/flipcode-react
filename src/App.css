@@ -20,12 +20,12 @@ body {
 }
  .btn-primary{
     background-color: var(--primary) !important;
-    border: var(--primary) 1px solid;
+    border: var(--secondary) 1px solid !important;
     width: 200px !important;
-    margin-left: 40%;
+    margin-left: 43%;
     margin-top: 6% !important;
     padding-bottom: 1%;
-    border-radius: 0px ;
+    border-radius: 0px !important ;
  }
  .btn-primary:hover{
     background-color: var(--secondary) !important;
@@ -41,11 +41,17 @@ body {
  .nav-link {
     color: var(--primary) !important;
     font-weight: 600;
+    font-size: 1.2rem;
+ }
+ .nav-link :hover{
+  color: var(--secondary);
+  
  }
  .active{
     color: var(--primary) !important;
  }
  .active:hover{
+    
     color: var(--secondary) !important;
     cursor: pointer;
  }
@@ -53,7 +59,7 @@ body {
  .conbtn{
    background-color: var(--primary) !important;
    color: var(--white);
-   width: 20%;
+   width: 25% !important;
    height: 30%;
  }
  .coninfo{
@@ -86,9 +92,10 @@ body {
     font-weight: bolder;
     letter-spacing: 2.25;
  }
- .carcard{
+ .carpage{   
+  display: flex;
+   justify-content: space-around !important;
    
-   justify-content: space-around;
  }
  .cartitle{
    font-size: 3rem;
@@ -97,12 +104,12 @@ body {
  .carsubtitle{
    font-weight: bolder !important;
    color: black !important;
-   letter-spacing: 0.25rem;
+   letter-spacing: 0.25rem !important;
  }
- .carposition{
-   font-weight: bolder;
+  .carposition{
+    font-weight: bolder;
     letter-spacing: 2.25;
- }
+  }
  .btncar{
   background-color: var(--secondary);
   border-radius: 20px;
@@ -130,39 +137,39 @@ body {
 .careffect:after{
   content: '';
   position: absolute;
-  left: 46%;
+  margin-left: 43%;
+  left: 4%;
   bottom: -3px;
-  width: 100px;
-  height: 2px;
+  width: 30px;
+  height: 5px;
   background: var(--primary);
   transition: all 0.45s;
 }
 .careffect:hover:after {
   content: '';
   position: absolute;
-  right: 20%;
+  left: 0%;
   bottom: -3px;
-  width: 50px;
+  width: 150px;
   height: 2px;
   background: var(--primary);
   transition: all 0.80s;
 }
 
 
+
+
  /* about page */
  .advantage{
   border-radius: 15px;
-  border: 5px solid rgba(0, 0, 0, 0.07);
+  border: 5px solid rgba(32, 13, 141, 0.07);
  }
  .adva{
   background-image: url(../public/img/slider-2.avif);
   color: var(--white);
   
  }
-.cardopt:hover{
-  background-color: var(--primary) !important;
-  color: var(--white);
-}
+
 .abouttest{
   background-image: url(../public/img/abouttest.jpg);
   color: var(--white)!important;
@@ -172,7 +179,11 @@ body {
   color: var(--white) !important;
 }
 /* Home page */
+.video-background{
+  width: 100%;
+}
 .homebtn{
+  color: #fff;
   background-color: var(--primary) !important;
   border: var(--primary) 1px solid;
   width: 150px;
@@ -194,93 +205,108 @@ body {
   
 }
 /* why choose us */
-.footers {
-  text-align: center;
+.cardopt:hover{
+  background-color: var(--primary) !important;
+  color: var(--white);
+}
+.box3 {
+  background: rgba(247, 198, 5, 0.20);
+  font-size: 40px;
+  border-radius: 50px;
+  padding: 20px;
+  color: red;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+
+.box3:hover {
+  background: var(--white);  
+  transform: scale(1.1);  
+}
+
+.box3 i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.box3:hover i {
+  color: #007bff;  
+  transform: scale(1.2);  
+}
+.footers{
   width: 100%;
   list-style: none;
   position: relative;
-  display: inline;
-  color: var(--secondary);
   text-decoration: none;
 }
-.footers:after {
+.footers:after{
   content: '';
   position: absolute;
-  right: 47%;
-  left: 47%;
+  margin-left: 45%;
+  left: 4%;
   bottom: -3px;
-  width: 100px;
+  width: 30px;
   height: 2px;
   background: var(--primary);
-  transition: all 0.45s;
+  transition: all 0.40s;
 }
-
-.footers:hover:after {
+.footers:hover:after{
   content: '';
   position: absolute;
-  left: 47%;
-  right: 20%;
+  left: 0%;
   bottom: -3px;
-  width: 20px;
+  width: 150px;                                                         
   height: 2px;
   background: var(--primary);
-  transition: all 0.45s;
+  transition: all 0.80s;
 }
-
-.footers:hover {
+.vision:hover {
   text-decoration: none; 
 }
+
 .vision{
-  text-align: center;
   width: 100%;
   list-style: none;
   position: relative;
-  display: inline;
-  color: var(--secondary);
   text-decoration: none;
 }
 .vision:after{
   content: '';
   position: absolute;
-  right: 45%;
-  left: 46.5%;
+  margin-left: 45%;
+  left: 4%;
   bottom: -3px;
-  width: 100px;
+  width: 30px;
   height: 2px;
   background: var(--primary);
-  transition: all 0.45s;
+  transition: all 0.40s;
 }
 .vision:hover:after{
   content: '';
   position: absolute;
-  left: 47%;
-  right: 20%;
+  left: 0%;
   bottom: -3px;
-  width: 20px;
+  width: 150px;                                                         
   height: 2px;
   background: var(--primary);
-  transition: all 0.45s;
+  transition: all 0.80s;
 }
 .vision:hover {
   text-decoration: none; 
 }
 .testi{
-  text-align: center;
   width: 100%;
   list-style: none;
   position: relative;
-  display: inline;
-  color: var(--secondary);
-  text-decoration: none;
+  text-decoration: none; 
 }
 .testi:after {
   content: '';
   position: absolute;
-  right: 47%;
-  left: 47%;
+  margin-left: 45%;
+  left: 4%;
   bottom: -3px;
-  width: 100px;
-  height: 2px;
+  width: 30px;
+  height: 5px;
   background: var(--primary);
   transition: all 0.45s;
 }
@@ -288,13 +314,12 @@ body {
 .testi:hover:after {
   content: '';
   position: absolute;
-  left: 47%;
-  right: 20%;
+  left: 0%;
   bottom: -3px;
-  width: 20px;
+  width: 150px;
   height: 2px;
   background: var(--primary);
-  transition: all 0.45s;
+  transition: all 0.80s;
 }
 
 .testi:hover {
@@ -319,11 +344,59 @@ body {
 .footeffect:hover:after {
   content: '';
   position: absolute;
-  right: 20%;
+  right: 30%;
   bottom: -3px;
-  width: 50px;
+  width: 140px;
   height: 2px;
   background: var(--primary);
   transition: all 0.80s;
 }
 
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Dialog */
+.modal-dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 600px;
+}
+
+/* Close Button */
+.close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-header,
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.modal-footer .btn {
+  margin-left: 10px;
+}

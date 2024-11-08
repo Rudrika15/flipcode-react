@@ -140,7 +140,7 @@ const Contact = () => {
 
               <label for="floatingContact">Contact Number</label>
             </div>
-
+            <br />
             <div class="form-floating">
               <input
                 type="Message"
@@ -154,6 +154,8 @@ const Contact = () => {
               {messageError ? <span style={{color:"red"}}> The message fiid is required</span> : ""}
               <label for="floatingMessage">Message</label>
             </div>
+            <br />
+          
             <div className="row py-4 ">
               <button type="button" class="btn conbtn">
                 Get Started
@@ -167,10 +169,10 @@ const Contact = () => {
           </div>
         </div>
         <div data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom">
+         data-aos-anchor-placement="center-bottom">
 
         <div className="row py-2 text-center">
-          <h1 className="contit">Contact Us</h1>
+          <h1 className="contit careffect ">Contact Us</h1>
 
         </div>
         <div class="row py-3"style={{paddingLeft:"5%",justifyContent:"space-between"}}>
@@ -188,6 +190,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
+          
           <div class="col-sm-4">
             <div class="card-body ">
             <h5 class="card-title conicon"><i class="fa-solid fa-phone"></i></h5>
@@ -197,6 +200,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
+          <br />
           <div class="col-sm-4">
             <div class="card-body">
               <h5 class="card-title conicon"><i class="fa-solid fa-envelope"></i></h5>

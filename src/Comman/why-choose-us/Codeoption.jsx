@@ -26,9 +26,9 @@ const Codeoption = ()=> {
             <div className="row  g-4">
               <div className="col-md-3 ">
                 <div className="card h-100 text-center advantage">
-                  <div className="card-body ">
+                  <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-globe-americas box3 " style={{background:"rgba(247, 198, 5, 0.20)",fontSize:"40px",borderRadius:"50px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-globe-americas box3  "></i>
                     </h5>
                     <p className="card-text py-4">Expertise and Experience</p>
                     <p>
@@ -44,7 +44,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center advantage">
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-android"style={{background:"rgba(255, 77, 28, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-android box3"></i>
                     </h5>
                     <p className="card-text py-4">Cutting-edge Technology</p>
                     <p>
@@ -61,7 +61,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center advantage">
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-cloud-fog2" style={{background:"rgba(0, 147, 38, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-cloud-fog2 box3"></i>
                     </h5>
                     <p className="card-text py-4">Customized Solutions</p>
                     <p>
@@ -78,7 +78,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center advantage">
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-dropbox" style={{background:"rgba(0, 108, 255, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-dropbox box3" ></i>
                     </h5>
                     <p className="card-text py-4">Reliable Support</p>
                     <p>
@@ -104,7 +104,7 @@ const Codeoption = ()=> {
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
                   
-                      <i className="bi bi-shield-fill-check" style={{background:"rgba(255, 77, 28, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-shield-fill-check box3" ></i>
                     </h5>
                     <p className="card-text py-4">Security and Privacy</p>
                     <p>
@@ -120,7 +120,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center advantage">
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-shield-fill-check"style={{background:"rgba(255, 77, 28, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-shield-fill-check box3"></i>
                     </h5>
                     <p className="card-text py-4">Cost-Effective Solutions</p>
                     <p>
@@ -136,7 +136,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center advantage">
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-hourglass-split"style={{background:"rgba(0, 147, 38, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-hourglass-split box3"></i>
                     </h5>
                     <p className="card-text py-4">Timely Delivery</p>
                     <p>
@@ -152,7 +152,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center advantage">
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-calendar2-check"style={{background:"rgba(0, 108, 255, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-calendar2-check box3"></i>
                     </h5>
                     <p className="card-text py-4">Client-Centric Approach</p>
                     <p>
@@ -177,7 +177,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center advantage">
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-shuffle"style={{background:"rgba(247, 198, 5, 0.20)",fontSize:"40px",borderRadius:"50px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-shuffle box3"></i>
                     </h5>
                     <p className="card-text py-4">
                       Scalability and Flexibility
@@ -195,7 +195,7 @@ const Codeoption = ()=> {
                 <div className="card h-100 text-center advantage">
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-journal-bookmark-fill"style={{background:"rgba(0, 108, 255, 0.15)",fontSize:"40px",borderRadius:"60px",padding:"20px",color:"red"}}></i>
+                      <i className="bi bi-journal-bookmark-fill box3"></i>
                     </h5>
                     <p className="card-text py-4">Long-Term Partnership</p>
                     <p>

@@ -71,7 +71,6 @@ const Service = () => {
 
       <Technology />
       <br />
-      <br />
     </>
   );
 };
