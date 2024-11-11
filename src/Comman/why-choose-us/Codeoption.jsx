@@ -26,9 +26,10 @@ const Codeoption = ()=> {
             <div className="row  g-4">
               <div className="col-md-3 ">
                 <div className="card h-100 text-center advantage">
+
                   <div className="card-body cardopt">
                     <h5 className="card-title py-4 text-center fs-1">
-                      <i className="bi bi-globe-americas box3  "></i>
+                      <i className="bi bi-globe-americas box3 "></i>
                     </h5>
                     <p className="card-text py-4">Expertise and Experience</p>
                     <p>
@@ -38,6 +39,7 @@ const Codeoption = ()=> {
                       successful solutions to clients from various industries.
                     </p>
                   </div>
+                  
                 </div>
               </div>
               <div className="col-md-3">

@@ -14,7 +14,7 @@ const Contact = () => {
   const [emailError,setemailError] =useState(false);
   const [contactError,setContactError] = useState(false);
   const [messageError,setMessageError] = useState(false);
-  const emailregulare = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const emailregulare =" /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/";
   
 
   const handleName = (e) => {
@@ -95,7 +95,7 @@ const Contact = () => {
             <img src="img/contactus.jpg" alt="" style={{ width: "90%" }} />
           </div>
           <div className="col-md-7 py-5 ">
-            <div class="form-floating mb-3" > 
+            <div className="form-floating mb-3" > 
             {/* //onSubmit={handlesubmit}// */}
               <input
                 type="name"
@@ -111,11 +111,11 @@ const Contact = () => {
               <label for="floatingName">Name</label>
             </div>
 
-            <div class="form-floating">
+            <div className="form-floating">
               <input
                 type="Email"
                 name="email"
-                class="form-control"
+                className="form-control"
                 id="floatingEmail"
                 placeholder="Email"
                 value={email} required
@@ -126,11 +126,11 @@ const Contact = () => {
               <label for="floatingEmail">Email address</label>
             </div>
             <br />
-            <div class="form-floating mb-3">
+            <div className="form-floating mb-3">
               <input
                 type="Contact"
                 name="contact"
-                class="form-control"
+                className="form-control"
                 id="floatingContact"
                 placeholder="name@example.com"
                 value={contact} required
@@ -141,11 +141,11 @@ const Contact = () => {
               <label for="floatingContact">Contact Number</label>
             </div>
             <br />
-            <div class="form-floating">
+            <div className="form-floating">
               <input
                 type="Message"
                 name="message"
-                class="form-control"
+                className="form-control"
                 id="floatingMessage"
                 placeholder="Message"
                 value={message} required 
@@ -175,37 +175,37 @@ const Contact = () => {
           <h1 className="contit careffect ">Contact Us</h1>
 
         </div>
-        <div class="row py-3"style={{paddingLeft:"5%",justifyContent:"space-between"}}>
-          <div class="col-sm-4 mb-3 mb-sm-0 " >
-            <div class="card-body">              
-              <h5 class="card-title conicon">
-                <i class="fa-solid fa-location-dot"></i>
+        <div className="row py-3"style={{paddingLeft:"5%",justifyContent:"space-between"}}>
+          <div className="col-sm-4 mb-3 mb-sm-0 " >
+            <div className="card-body">              
+              <h5 className="card-title conicon">
+                <i className="fa-solid fa-location-dot"></i>
               </h5>
-              <h5 class="card-title contitle ">
+              <h5 className="card-title contitle ">
                  Our Location
               </h5>
-              <p class="card-text conadd py-3">
+              <p className="card-text conadd py-3">
                 Flipcode Solutions Private Limited <br /> Nr.  Panama Sales, Dalmill
                 road <br /> Surendranagr,<br /> Gujarat 363001 India
               </p>
             </div>
           </div>
           
-          <div class="col-sm-4">
-            <div class="card-body ">
-            <h5 class="card-title conicon"><i class="fa-solid fa-phone"></i></h5>
-              <h5 class="card-title contitle py-2">Phone Number</h5>
-              <p class="card-text conadd py-2">
+          <div className="col-sm-4">
+            <div className="card-body ">
+            <h5 className="card-title conicon"><i class="fa-solid fa-phone"></i></h5>
+              <h5 className="card-title contitle py-2">Phone Number</h5>
+              <p className="card-text conadd py-2">
               +91 9979404044
               </p>
             </div>
           </div>
           <br />
-          <div class="col-sm-4">
-            <div class="card-body">
-              <h5 class="card-title conicon"><i class="fa-solid fa-envelope"></i></h5>
-              <h5 class="card-title contitle py-2">Email Address</h5>
-              <p class="card-text conadd py-2">
+          <div className="col-sm-4">
+            <div className="card-body">
+              <h5 className="card-title conicon"><i class="fa-solid fa-envelope"></i></h5>
+              <h5 className="card-title contitle py-2">Email Address</h5>
+              <p className="card-text conadd py-2">
               contact@flipcodesolutions.com
               </p>
             </div>

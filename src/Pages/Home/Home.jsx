@@ -8,24 +8,20 @@ import "aos/dist/aos.css";
 import Testimonal from "../../Comman/testimonal/Testimonal";
 import Technology from "../../Comman/technology/technology";
 import { Helmet } from "react-helmet";
-import {useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import {useNavigate } from "react-router-dom";
 
 
 
 
 const Home = () => {
   
-  let navigate = useNavigate(); 
-  const routeChange = () =>{ 
-    let path = `newPath`; 
-    navigate(path);
-  }
   return (
     <>
       <Helmet>
          <title>Home</title>
       </Helmet>
-      <div className="video container"style={{ position: "relative", width: "500%", height: "100vh", overflow: "hidden" }}>
+      <div className="video container"style={{ position: "relative", width: "800%", height: "100vh", overflow: "hidden" }}>
       <video id="video-background" autoplay="" muted="" loop=""  style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%", objectFit:"contain"}}>
         <source src="img/1.mp4" type="video/mp4"/>
        
@@ -40,9 +36,12 @@ const Home = () => {
               <p style={{ fontSize: "15px", lineHeight: "35px" }}>
                 {item.detail}
               </p>              
-              <button className="homebtn" onClick={routeChange}>
-                Read more
-              </button>
+              
+               {/* <button className="homebtn">
+                           Read more
+               </button> */}
+               <Link className="homebtn"  to="/about">Read More</Link>
+              
             </div>            
             <div className="col-md-6 mb-md-0 p-md-4">
               <img
@@ -75,14 +74,14 @@ const Home = () => {
             <div className="container  ">
               <div data-aos="flip-right">
               <div className="row m-5 col-md-12 "style={{gap:"11px"}} >
-                <div class="card" style={{ width: "30.33%"}}>
-                  <div class="card-body" >
+                <div className="card" style={{ width: "30.33%"}}>
+                  <div className="card-body" >
                     <p>
-                      <i class="bi bi-lightbulb"></i>
+                      <i className="bi bi-lightbulb"></i>
                     </p>
-                    <h6 class="card-title">Custom Software Development</h6>
+                    <h6 className="card-title">Custom Software Development</h6>
 
-                    <p class="card-text">
+                    <p className="card-text">
                       Leverage our expertise in developing bespoke software
                       solutions. From concept to deployment, our skilled team
                       ensures that your software aligns seamlessly with your
@@ -90,13 +89,13 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="card" style={{ width: "30.33%" }}>
-                  <div class="card-body ">
+                <div className="card" style={{ width: "30.33%" }}>
+                  <div className="card-body ">
                     <p>
-                      <i class="bi bi-code-slash"></i>
+                      <i className="bi bi-code-slash"></i>
                     </p>
-                    <h6 class="card-title">Web Application Development</h6>
-                    <p class="card-text">
+                    <h6 className="card-title">Web Application Development</h6>
+                    <p className="card-text">
                       Transform your online presence with dynamic and
                       user-friendly web applications. We specialize in creating
                       scalable and responsive solutions that captivate your
@@ -104,13 +103,13 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="card " style={{ width: "30.33%" }}>
-                  <div class="card-body m-1  ">
+                <div className="card " style={{ width: "30.33%" }}>
+                  <div className="card-body m-1  ">
                     <p>
-                      <i class="bi bi-phone-flip"></i>
+                      <i className="bi bi-phone-flip"></i>
                     </p>
-                    <h5 class="card-title">Mobile App Development</h5>
-                    <p class="card-text">
+                    <h5 className="card-title">Mobile App Development</h5>
+                    <p className="card-text">
                       Stay ahead in the mobile-first world with our innovative
                       mobile app development services. Whether it's iOS,
                       Android, or cross-platform, we bring your app ideas to
@@ -122,16 +121,16 @@ const Home = () => {
               </div>
             </div>
             </div>
-            <div className="container text-center  ">
+            <div className="container text-center ">
               <div className="row m-5 col-md-12" style={{gap:"11px"}}>
-                <div class="card" style={{ width: "30.33%" }}>
-                  <div class="card-body ">
+                <div className="card" style={{ width: "30.33%" }}>
+                  <div className="card-body ">
                     <p>
-                    <i class="bi bi-tv-fill"></i>
+                    <i className="bi bi-tv-fill"></i>
                     </p>
-                    <h6 class="card-title">IT Consulting</h6>
+                    <h6 className="card-title">IT Consulting</h6>
 
-                    <p class="card-text">
+                    <p className="card-text">
                       Rely on our experienced consultants to provide strategic
                       insights and recommendations. We collaborate with you to
                       optimize your IT infrastructure, aligning technology with
@@ -139,15 +138,15 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="card" style={{ width: "30.33%" }}>
-                  <div class="card-body ">
+                <div className="card" style={{ width: "30.33%" }}>
+                  <div className="card-body ">
                     <p>
-                    <i class="bi bi-graph-up-arrow"></i>
+                    <i className="bi bi-graph-up-arrow"></i>
                     </p>
-                    <h6 class="card-title">
+                    <h6 className="card-title">
                       Data Analytics and Business Intelligence
                     </h6>
-                    <p class="card-text">
+                    <p className="card-text">
                       Unlock the potential of your data with our advanced
                       analytics and business intelligence solutions. Make
                       informed decisions and gain a competitive edge in today's
@@ -155,13 +154,13 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div class="card" style={{ width: "30.33%" }}>
-                  <div class="card-body ">
+                <div className="card" style={{ width: "30.33%" }}>
+                  <div className="card-body ">
                     <p>
-                    <i class="bi bi-gear-wide-connected"></i>
+                    <i className="bi bi-gear-wide-connected"></i>
                     </p>
-                    <h5 class="card-title">E-commerce Solutions</h5>
-                    <p class="card-text">
+                    <h5 className="card-title">E-commerce Solutions</h5>
+                    <p className="card-text">
                       Boost your online presence and revenue with our tailored
                       e-commerce solutions. We create secure, user-friendly
                       platforms that enhance the shopping experience for your

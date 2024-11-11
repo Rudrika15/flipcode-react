@@ -105,6 +105,7 @@ body {
    font-weight: bolder !important;
    color: black !important;
    letter-spacing: 0.25rem !important;
+   
  }
   .carposition{
     font-weight: bolder;
@@ -155,10 +156,6 @@ body {
   background: var(--primary);
   transition: all 0.80s;
 }
-
-
-
-
  /* about page */
  .advantage{
   border-radius: 15px;
@@ -168,6 +165,10 @@ body {
   background-image: url(../public/img/slider-2.avif);
   color: var(--white);
   
+ }
+ .pachas{
+  font-size: 30px;
+  font-weight: bolder;
  }
 
 .abouttest{
@@ -186,17 +187,22 @@ body {
   color: #fff;
   background-color: var(--primary) !important;
   border: var(--primary) 1px solid;
-  width: 150px;
+  /* width: 100% !important; */
   margin-left: 1%;
   margin-top: 2%;
   padding-bottom: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
   border-radius: 7px;
+  text-decoration: none;
 }
 .Homebtn:hover{
-  background-color: var(--primary) !important;
+    background-color: var(--secondary) !important;
     border: var(--primary) 1px solid;
-    width: 150px;
     cursor: pointer;
+    color: var(--white) !important;
+    text-decoration: none;
+
 }
 /* footer page  */
 .icon1:hover{
@@ -204,15 +210,20 @@ body {
   cursor: pointer;
   
 }
-/* why choose us */
+/* why choose us  change effect in hover*/
+.cardopt{
+    border: 5px solid rgba(0, 0, 0, 0.07)!important ;
+    border-bottom: 50px !important;
+}
 .cardopt:hover{
-  background-color: var(--primary) !important;
+  background-color: var(--primary) !important;  
   color: var(--white);
+  position: relative;
 }
 .box3 {
   background: rgba(247, 198, 5, 0.20);
   font-size: 40px;
-  border-radius: 50px;
+  border-radius: 60px;  
   padding: 20px;
   color: red;
   display: inline-block;
@@ -223,15 +234,17 @@ body {
   background: var(--white);  
   transform: scale(1.1);  
 }
-
 .box3 i {
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
 .box3:hover i {
   color: #007bff;  
-  transform: scale(1.2);  
+  transform: scale(1.2); 
+  position:absolute ;
 }
+
+
+
 .footers{
   width: 100%;
   list-style: none;
@@ -262,7 +275,6 @@ body {
 .vision:hover {
   text-decoration: none; 
 }
-
 .vision{
   width: 100%;
   list-style: none;

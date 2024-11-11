@@ -7,7 +7,7 @@ const Navbar = () => {
     
       <nav className="navbar navbar-expand-lg bg-body-white shadow-sm ">
         <div className="container" >
-          <Link class="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/">
             <img src="img/logo.png" className="logo"/>
           </Link>
           <button
@@ -19,38 +19,38 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
 
-                <Link class="nav-link active " aria-current="page" to="/about">
+                <Link className="nav-link active " aria-current="page" to="/about">
                   About
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link active " aria-current="page" to="/service">
+              <li className="nav-item">
+                <Link className="nav-link active " aria-current="page" to="/service">
                   Service
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link active " aria-current="page" to="/portfolio">
+              <li className="nav-item">
+                <Link className="nav-link active " aria-current="page" to="/portfolio">
                   Portfolio
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link active " aria-current="page" to="/career">
+              <li className="nav-item">
+                <Link className="nav-link active " aria-current="page" to="/career">
                   Career
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/contact">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/contact">
                   Contact us
                 </Link>
               </li>

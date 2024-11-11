@@ -15,7 +15,7 @@ const Testimonal = () => {
           <div
             id="carouselExampleControls"
             data-mdb-carousel-init
-            class="carousel slide text-center "
+            className="carousel slide text-center "
             data-mdb-ride="carousel"
           >
             <div className="carousel-inner">
